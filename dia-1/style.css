@@ -1,0 +1,44 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.box {
+  max-width: 700px;
+  width: 400px;
+  border: 6px solid purple;
+  border-radius: 10px;
+  display: flex;
+  transition: width 1.25s;
+}
+
+.box:hover {
+  width: 700px;
+}
+
+.box:hover .overlayTarget {
+  opacity: 1;
+  top: 0;
+}
+
+.box:hover .hoverTrigger {
+  opacity: 0;
+}
+
+p {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.hoverTrigger {
+  cursor: pointer;
+  transition: 1s;
+}
+
+.overlayTarget {
+  cursor: pointer;
+  position: absolute;
+  top: 10rem;
+  opacity: 0;
+  transition: opacity 1s, top 1s;
+}
+
